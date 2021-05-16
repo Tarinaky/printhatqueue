@@ -5,7 +5,7 @@ def queue(args):
     print(args)
     with printhatqueue.QueueFile('queue.zip') as queue_file:
         for gcode in args.g:
-            queue_file.add_gcode(gcode)
+            queue_file.add_gcode(gcode, repeats=args.n)
 
 def release(args):
     print(args)
@@ -19,6 +19,7 @@ if __name__ == '__main__':
 
     scan_parser = subparsers.add_parser('queue', help='add a gcode file to the print queue')
     scan_parser.add_argument('-g', required=True, action='append', type=str, help='a gcode file to add')
+    scan_parser.add_argument('-n', type=int, help='number of times to repeat this file')
     scan_parser.set_defaults(func=queue)
 
     release_parser = subparsers.add_parser('release', help='release the next job to a printer')
