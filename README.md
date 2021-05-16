@@ -12,6 +12,7 @@ them to print as the printer finishes.
  * [ ] Release gcode files to an octoprint server - v1.0, minimum viable product
  * [ ] Ability to edit jobs once they have been added to the queue, e.g. to change multiples or priority - v1.1
  * [ ] Ability to requeue a failed job - v1.2
+ * [ ] Ability to scan a directory for new files and enqueue them interactively - v1.3
  * [ ] Ability to queue files with 'capability' tags which indicate what kind of printer they should be released to - v2.0
  * [ ] Ability to preconfigure multiple printer servers with capability tags to determine what kinds of jobs they should receive - v2.0
  * [ ] Instead of releasing jobs directly, allow operator to mark printers as ready to print after manually clearing, job release happens automatically when printer marked as ready - v2.0
