@@ -18,4 +18,5 @@ them to print as the printer finishes.
  * [ ] Integrate Slicer engine to allow queueing of STL files directly - v2.2
  * [ ] Preconfigure slicer profiles which automatically add capability tags to their generated jobs - v2.2
  * [ ] Web Service which emulates Octoprint endpoints to allow for gcode upload directly from Slicer - v3
+ * [ ] Containerised web service hosting a simple UI - v3
  * [ ] Kanban board to tie printable artifacts to larger builds and projects - v3
